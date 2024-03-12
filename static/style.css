@@ -1,0 +1,116 @@
+header {
+    background-color: rgb(206, 22, 26);
+    min-height: 56px;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+    font-family: Brown,BrownStd-Regular,Saira,sans-serif;
+    color: white;
+}
+body {
+    background-color: #D2D4DA;
+    font-family: Brown,BrownStd-Regular,Saira,sans-serif;
+    width: 99%;
+}
+h1 {
+    font-size: 2em;
+    font-family: Brown,BrownStd-Regular,Saira,sans-serif;
+    font-weight: normal;
+}
+input {
+    background-color: lightgray;
+    width: 7%;
+}
+.numberinput {
+    width: 2.2%;
+}
+.removeForm {
+    display: flex;
+    flex-direction: column;
+}
+.formsContainerBig {
+    display: flex;
+    width: 100%;
+
+}
+.shortlist-view {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 0.8rem !important;
+    padding: 10px;
+    outline-style: solid;
+    outline-color: #D2D4DA;
+    display: grid;
+    text-align: end;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
+    margin-top: 0.5%;
+}
+.formsContainer {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 0.875rem;
+    display: flex;
+    padding: 10px 0 10px 0;
+    justify-content: left;
+    flex: 0 0 65%;
+    width: inherit;
+    border-top-left-radius: 4px;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
+}
+.formsContainer2 {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 35%;
+    border-top-right-radius: 4px;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
+}
+.buttons {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    font-family: Brown, BrownStd-Regular, Saira, sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.75;
+    text-transform: uppercase;
+    min-width: 64px;
+    padding: 6px 16px;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    color: rgb(255, 255, 255);
+    background-color: rgb(206, 22, 26);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+    margin-left: 1%;
+}
+
+
+.radiobutt {
+    width: 3%;
+    margin-right: -1%;
+}
+label {
+    margin-left: 1%;
+}
+.delete-labels {
+    width: 50%;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Managementmodul</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <h1>Players in Database</h1>
+    <div class="formsContainerBig">
+        <div class="formsContainer">
+        <form action="/" method="POST">
+            <label for="position">Pos:</label>
+            <input type="text" id="position" name="position" required>
+            <label for="position">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="found">Via:</label>
+            <input type="text" id="found" name="found" required>
+            <label for="player">Player:</label>
+            <input type="text" id="player" name="player" required>
+            <label for="avatar">Born:</label>
+            <input type="text" id="born" name="born" required>
+            <label for="nationality">Nationality:</label>
+            <input type="text" id="nationality" name="nationality" required>
+            <label for="club">Club:</label>
+            <input type="text" id="club" name="club" required>
+            <br>
+            <br>
+            <label for="status">Status:</label>
+                <input class="radiobutt" type="radio" id="status-a" name="status" value="A" required>
+                <label for="status-a">A</label>
+                <input class="radiobutt" type="radio" id="status-b" name="status" value="B" required>
+                <label for="status-b">B</label>
+                <input class="radiobutt" type="radio" id="status-c" name="status" value="C" required>
+                <label for="status-c">C</label>
+                <input class="radiobutt" type="radio" id="status-d" name="status" value="D" required>
+                <label for="status-d">D</label>
+                <input class="radiobutt" type="radio" id="status-e" name="status" value="E" required>
+                <label for="status-e">E</label>
+            <label for="comment">Comment:</label>
+            <input type="text" id="comment" name="comment" required>
+            <label for="xTransferValue">xTransfer Value:</label>
+            <input type="text" id="xTransferValue" name="xTransferValue" required>
+            <label for="other">Report:</label>
+            <input type="text" id="report" name="report" required>
+            <input class="buttons" type="submit" value="Submit">
+        </form></div>
+        <div class="formsContainer2">
+        <form action="/delete_document" method="POST">
+            <br>
+            <label for="delete_name">Player:</label>
+            <input class="delete-labels" type="text" id="delete_player" name="player">
+            <input class="buttons" type="submit" value="Remove">
+        </form>
+    </div>
+</div>
+
+
+    <div class="shortlist-view">
+        {{ table.__html__() | safe }}
+</div>
+<script src="/managementmodul.js"></script>
+</body>
+</html>

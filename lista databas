@@ -1,0 +1,16 @@
+        <ul>
+        {% for document in documents %}
+        <li>
+            <strong>Name:</strong> {{ document.name }} {{ document.surname }} -
+            <strong>Age:</strong> {{ document.age }} -
+            <strong>Position:</strong> {{ document.position }} -
+            <strong>Avatar:</strong> {{ document.avatar }} -
+            <strong>Club:</strong> {{ document.club }} -
+            <strong>Nationality:</strong> {{ document.nationality }} -
+            <strong>Height:</strong> {{ document.height }} -
+            <strong>Status:</strong> {{ document.status }} -
+            <strong>xTransfer Value:</strong> {{ document.xTransferValue }} -
+            <strong>Other:</strong> {{ document.other }}
+        </li>
+        {% endfor %}
+    </ul>
