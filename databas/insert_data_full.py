@@ -1,9 +1,9 @@
-from .connect_to_database import collection
+from .connect_to_database import new_collection
 
 def insert_document(pos, date, found, player, born, nationality, team, status, comment, xTransferValue, report):
 
     new_document = {
-        "position": pos,
+        "pos": pos,
         "date": date,
         "found": found,
         "player": player,
@@ -15,5 +15,5 @@ def insert_document(pos, date, found, player, born, nationality, team, status, c
         "xTransferValue": xTransferValue,
         "report": report
     }
-    result = collection.insert_one(new_document)
+    result = new_collection.insert_one(new_document)
     return result.inserted_id

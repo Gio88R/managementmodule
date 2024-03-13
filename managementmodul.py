@@ -17,18 +17,18 @@ def delete_document_route():
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
-        position = request.form['position']
+        pos = request.form['pos']
         date = request.form['date']
         found = request.form['found']
         player = request.form['player']
         born = request.form['born']
         nationality = request.form['nationality']
-        club = request.form['club']
+        team = request.form['team']
         status = request.form['status']
         comment = request.form['comment']
         xTransferValue = request.form['xTransferValue']
         report = request.form['report']
-        insert_data.insert_document(position, date, found, player, born, nationality, club, status, comment, xTransferValue, report)
+        insert_data.insert_document(pos, date, found, player, born, nationality, team, status, comment, xTransferValue, report)
         return redirect(url_for('index'))
     else:
         #documents = retrieve_data.get_documents()

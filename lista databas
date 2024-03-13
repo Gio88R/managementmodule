@@ -3,9 +3,9 @@
         <li>
             <strong>Name:</strong> {{ document.name }} {{ document.surname }} -
             <strong>Age:</strong> {{ document.age }} -
-            <strong>Position:</strong> {{ document.position }} -
+            <strong>Pos:</strong> {{ document.pos }} -
             <strong>Avatar:</strong> {{ document.avatar }} -
-            <strong>Club:</strong> {{ document.club }} -
+            <strong>Team:</strong> {{ document.team }} -
             <strong>Nationality:</strong> {{ document.nationality }} -
             <strong>Height:</strong> {{ document.height }} -
             <strong>Status:</strong> {{ document.status }} -

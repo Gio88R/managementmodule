@@ -15,7 +15,7 @@
         <div class="formsContainer">
         <form action="/" method="POST">
             <label for="position">Pos:</label>
-            <input type="text" id="position" name="position" required>
+            <input type="text" id="pos" name="pos" required>
             <label for="position">Date:</label>
             <input type="date" id="date" name="date" required>
             <label for="found">Via:</label>
@@ -26,8 +26,8 @@
             <input type="text" id="born" name="born" required>
             <label for="nationality">Nationality:</label>
             <input type="text" id="nationality" name="nationality" required>
-            <label for="club">Club:</label>
-            <input type="text" id="club" name="club" required>
+            <label for="club">Team:</label>
+            <input type="text" id="team" name="team" required>
             <br>
             <br>
             <label for="status">Status:</label>
@@ -62,6 +62,9 @@
 
     <div class="shortlist-view">
         {{ table.__html__() | safe }}
+</div>
+<div class="shortlist-view">
+        {{ fulltable.__html__() | safe }}
 </div>
 <script src="/managementmodul.js"></script>
 </body>
