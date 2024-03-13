@@ -1,6 +1,6 @@
 from flask import Flask, request, redirect, url_for, render_template
 from databas import insert_data, retrieve_data, delete_data
-from modules.table import populate_document_table
+from modules.table import populate_document_table, populate_second_table
 app = Flask(__name__)
 
 # Flask-rutt för att ta bort dokument
@@ -33,7 +33,8 @@ def index():
     else:
         #documents = retrieve_data.get_documents()
         table = populate_document_table()
-        return render_template('index.html', table=table)
+        full_table = populate_second_table()
+        return render_template('index.html', table=table, full_table=full_table)
 
 if __name__ == '__main__':
     app.run(debug=True)
