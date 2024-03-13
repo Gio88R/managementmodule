@@ -17,7 +17,7 @@ def delete_document_route():
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
-        pos = request.form['pos']
+        pos = request.form['Pos']
         date = request.form['date']
         found = request.form['found']
         player = request.form['player']

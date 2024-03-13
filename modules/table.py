@@ -4,13 +4,13 @@ from databas.retrieve_data import get_documents
 from markupsafe import Markup
 # Declare table
 class DocumentTable(Table):
-    position = Col('Pos')
+    Pos = Col('Pos')
     date = Col('Date')
     found = Col('Found Via')
     player = Col('Player')
     born = Col('Born')
     nationality = Col('Nationality')
-    club = Col('Club')
+    team = Col('Team')
     status = Col('Status')
     comment = Col('Comment')
     xTransferValue = Col('xTransferValue')
