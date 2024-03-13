@@ -1,15 +1,15 @@
 from .connect_to_database import collection
 
-def insert_document(pos, date, found, player, born, nationality, team, status, comment, xTransferValue, report):
+def insert_document(Pos, date, found, Player, born, nationality, Team, status, comment, xTransferValue, report):
 
     new_document = {
-        "pos": pos,
+        "Pos": Pos,
         "date": date,
         "found": found,
-        "player": player,
+        "Player": Player,
         "born": born,
         "nationality": nationality,
-        "team": team,
+        "Team": Team,
         "status": status,
         "comment": comment,
         "xTransferValue": xTransferValue,
